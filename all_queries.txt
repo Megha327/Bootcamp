@@ -1,0 +1,91 @@
+There will be three tables - 
+1. customer
+2. sales_person
+3. orders
+
+customer (one to many) orders
+orders (many to one) sales_person
+
+
+Create table customer ( 
+id int PRIMARY KEY auto_increment, 
+name varchar(50), 
+contact varchar(20), 
+address text
+);
+
+Create table sales_person ( 
+id int PRIMARY KEY auto_increment, 
+name varchar(50), 
+contact varchar(20), 
+address text
+);
+
+Create table orders ( 
+id int PRIMARY KEY auto_increment, 
+quantity int,
+price int,
+customerId int,
+salesPersonId int,
+FOREIGN KEY (customerId) REFERENCES customer(id),
+FOREIGN KEY (salesPersonId) REFERENCES sales_person(id)
+);
+
+
+INSERT INTO 
+    customer(name, contact, address)
+VALUES
+    ('Megha','9910123456','noida'),
+    ('Mansi','9920253456','delhi'),
+    ('Neetu','9930345456','gurgaon');
+
+
+INSERT INTO 
+    sales_person(name, contact, address)
+VALUES
+    ('Mohit','8010123456','noida'),
+    ('Karthick','8020253456','delhi'),
+    ('Dhanendra','8030345456','noida');
+
+
+INSERT INTO 
+    orders(quantity, price, customerId, salesPersonId)
+VALUES
+    (10, 800, 1, 1),
+    (20, 350, 1, 2),
+    (2, 8000, 2, 1),
+    (5, 5000, 3, 3),
+    (7, 700, 3, 2),
+    (3, 300, 1, 2);
+
+SELECT salesPersonId, name, contact, address, COUNT(salesPersonId) FROM 
+(SELECT o.id orderId, salesPersonId, s.name, s.contact, s.address
+FROM orders as o LEFT JOIN sales_person as s ON o.salesPersonId = s.id) as a 
+GROUP BY salesPersonId
+HAVING COUNT(salesPersonId) > 1;
+
+
+SELECT * FROM
+orders as o RIGHT JOIN sales_person as sp
+ON o.salesPersonId = sp.id;
+
+
+	
+SHOW INDEXES FROM orders;
+CREATE INDEX order_price ON orders(price);
+
+
+SELECT o.id as order_number, sp.name as sales_person_name, c.name as customer_name FROM
+orders as o LEFT JOIN customer as c ON o.customerId = c.id
+LEFT JOIN sales_person as sp ON o.salesPersonId = sp.id;
+
+
+
+
+
+
+
+
+
+
+
