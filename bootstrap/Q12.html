@@ -80,7 +80,7 @@
                                           <input type="radio" name="radiobtn">Business
                                         </label>
                                    </div> 
-                                    <div class="form-group">
+                                    <div class="form-group well">
                                       <label for="severity">Severity:</label>
                                       <select class="form-control" id="severity">
                                         <option>Critical</option>
@@ -88,18 +88,15 @@
                                         <option>Normal</option>
                                       </select>
                                     </div>
-                                    <div class="input-group">
-                                      <label for="attach">Attachment:</label>
-                                      <input type="text" class="form-control" placeholder="No File Selected" name="attach">
-                                      <div class="input-group-btn chbtndiv">
-                                        <button class="btn btn-default chfilebtn" type="button">Choose File</button>
-                                      </div>
-                                    </div>
-                                    <!-- <div class="input-group">
-                                      <label for="attach">Attachment:</label>
-                                      <input type="File" class="form-control" placeholder="No File Selected" name="attach"/>
-                                    </div> -->
 
+                                   <label for="Attachments"> Attachments:</label>
+                                    <div class="custom-input-file">
+                                      <span>No File Selected</span>
+                                      <input class="attach" type="file">
+                                      <button type="button">Choose File</button>
+                                    </div>
+
+                                  
                               </div><!----end of inoutform div-------->
                               <div class="row rowbtn">
                                   <div class=" pull-right">
@@ -115,3 +112,11 @@
 
 </body>
 </html>
+
+<!-- 
+<p class="" style="
+    background-color: yellow;
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+">1</p> -->
