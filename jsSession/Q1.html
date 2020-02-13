@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question 1</title>
+
+  </head>
+  <body onload="myFunction()">
+    <h1>Question1: Prompt for amount, interest rate and no. of years and calculate simple interest.</h1>
+    <p id="demo"></p>
+   <script type="text/javascript">
+   	
+   	function myFunction(){
+   		var amount = prompt("Please Enter a Amount");
+   		var rate = prompt("Please Enter a Interest Rate");
+   		var year = prompt("Please Enter a Number of year");
+   		
+   		if(amount != "" && rate != "" &&  year != "" ){
+	   		var calculate = (amount * rate * year )/100;
+	   		alert("Calculating the simple interest :" + calculate);
+        document.getElementById('demo').innerHTML= "Calculating the simple interest :" + calculate;
+   		}
+   		else{
+   			alert("Please fill Fields with proper values ");
+   		}
+   	}
+
+
+
+
+
+
+   </script>
+      
+
+
+  </body>
+</html>

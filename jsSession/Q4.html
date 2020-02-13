@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question 1</title>
+
+  </head>
+  <body onload="myFunction()">
+   
+
+   <script type="text/javascript">
+   	
+function myFunction()
+{
+        // Define object emp
+        var emp = {name:'Megha'}
+   
+    console.log(emp.name);  //Megha
+
+    // Assign it to emp2
+    var emp2 = emp;
+    console.log(emp2.name);  //Megha
+
+    //But
+    emp2.name = 'Hello!! Im  megha';
+    console.log(emp2.name);  //Hello!! Im megha.
+    console.log(emp.name);  //Hello!! Im megha.
+
+    emp.name = "Nice to meet you foo!!";
+    console.log(emp.name);  //Nice to meet you foo!!
+    console.log(emp2.name);  //Nice to meet you foo!!
+
+
+
+      var obj = { x: 12, y: 15 };
+
+      var clonedObj = Object.assign({}, obj);
+      // Object { x: 12, y: 15 }
+
+      console.log(clonedObj);
+
+
+}
+
+
+
+
+   </script>
+      
+
+
+  </body>
+</html>

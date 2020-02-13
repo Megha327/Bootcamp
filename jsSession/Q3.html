@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question 3</title>
+
+  </head>
+  <body onload="myFunction()">
+   
+    <h1>Question2: Area of circle</h1>
+   <p id="demo"></p>
+
+
+   <script type="text/javascript">
+   	
+function myFunction()
+{
+    let radius = prompt("Please Enter a radius of circle for area of circle");
+    if(radius != "" ){
+        let area = radius * radius * Math.PI;
+        alert("Area of circle: "+ area);
+        document.getElementById('demo').innerHTML = "Area of circle: "+ area;
+      }
+      else{
+        alert("Please fill value");
+      }
+}
+
+
+   </script>
+      
+
+
+  </body>
+</html>
