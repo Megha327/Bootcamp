@@ -73,9 +73,8 @@
 .bg-img{
     width:550px;
     height:500px;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('nature.jpeg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6), blue), url('nature.jpeg');
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
 }
 .bg-text{
