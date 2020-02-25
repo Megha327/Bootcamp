@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="stylesheet/style.css" rel="stylesheet">
+    <link  rel="stylesheet" media="screen and (max-width: 991px)" href="stylesheet/tablet.css" >
+    <link  rel="stylesheet" media="screen and (max-width: 768px)" href="stylesheet/mobile.css" >
+    <title>Responsive web site </title>
+  
+</head>
+
+<body>
+  <div class="main-container">
+        <aside id="aside-menu" class="aside-menu  primary-bg-color">
+            <ul class="tablet-screen-ul">
+                <li><a href="#" onclick="closeNav()"><i class="fa fa-window-close close-btn" aria-hidden="true"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Genric</a></li>
+                <li><a href="#">Elements</a></li>
+            </ul>
+        </aside>
+        <header class="main-header">
+            <div class="overlay"></div>
+            <div class="wrapper">
+                <nav class="navbar">
+                    <div class="logo">
+                        <h2>Responsive Layout</h2>
+                    </div>
+                    <div class="right-nav">
+                        <ul class="wildscreen-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Genric</a></li>
+                            <li><a href="#">Elements</a></li>
+                        </ul>
+                        <button class="btn-bar " onclick="openNav()"><i class="fa fa-bars aside-menu-bar" aria-hidden="true"></i></button>
+                        
+                    </div>
+                </nav>
+                <div class="banner-content clearfix">
+                    <h2>Welcome</h2>
+                    <span class="middle-text">
+                        <i class="fa fa-car primary-color"></i>
+                        <p><a href="#" class="link-feature">Travel</a></p>
+                        <p>Choose a ride</p>
+                    </span>
+                    <span class="middle-text last-content">
+                        <i class="fa fa-camera primary-color"></i>
+                        <p><a href="#" class="link-feature">Gallery</a></p>
+                        <p>Choose photos</p>
+                    </span>
+                    <p class="banner-link"><a href="#" class="btn primary-border-color primary-color">GET STARTED</a></p>
+                </div>
+            </div>
+        </header>
+        <div class="main-section">
+            <div class="wrapper">
+                <div class="feature">
+                    <img src="images/mobile.jpg" alt="mobile image">
+                    <h3>Loreum ipsum dolor amet nullam</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <a href="#" class="btn primary-border-color primary-color">LEARN MORE</a>
+                </div>
+                <div class="feature">
+                    <img src="images/camera.jpg" alt="mobile image">
+                    <h3>Loreum ipsum dolor amet nullam</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <a href="#" class="btn primary-border-color primary-color">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

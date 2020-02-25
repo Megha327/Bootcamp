@@ -1,0 +1,47 @@
+
+.tablet-screen-ul li a{
+    font-size: .7rem;
+}
+
+
+.banner-content h2{
+    font-size: 1.7rem;
+    margin-top: 25px;
+}
+.middle-text{
+    border: none;
+}
+.last-content{
+    margin-top: 30px;
+}
+
+.feature{
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    width: calc(100% - 40px);
+    float: none;    
+}
+.feature:last-child{
+    padding-bottom: 20px;
+}
+.feature h3{
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px;
+}
+.feature p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px){
+    .aaside-menu{
+        width: 35%;
+        right: -24px;
+    }
+    .tablet-screen-ul li a{
+        font-size: .7rem;
+        margin: 15px 10px 0px 10px;
+        width: 80%;
+    }
+}
