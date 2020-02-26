@@ -1,0 +1,13 @@
+/* .woking-container{
+    flex-direction: column;
+} */
+.sub-item{
+    flex-direction: column;
+    align-items: center;
+}
+.working-text{
+    text-align: center;
+}
+.map-box{
+    flex: 1;
+}
