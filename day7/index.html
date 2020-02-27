@@ -18,6 +18,25 @@
 <body>
     <div class="main-container">
         <header class="main-header">
+            <saide class="aside-menu" id="aside-menu">
+                <ul class="aside-menu-section">
+                    <li><a href="#" onclick="closeNav()"><i class="fa fa-times-circle"></i></a></li>
+                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#">Ecosystems</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <!-- <li class="dropdown">
+                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">About</a>
+                              <a class="dropdown-item" href="#">Ecosystems</a>
+                              <a class="dropdown-item" href="#">Resources</a>
+                              <a class="dropdown-item" href="#">Contact Us</a>
+                            </div>
+                    </li> -->
+                </ul>
+            </saide>
             <div class="wrapper-header">
                 <div class="left-side">
                     <div class="heading-section">
@@ -51,10 +70,20 @@
                                 </div>
                         </li>
                     </ul>
+                    <button class="toggle" onclick="openNav()"><i class="fa fa-bars"></i></button>
                 </div>
             </div> 
         </header>
         <section class="banner">
+            <div class="wrapper">
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li>></li>
+                    <li><a href="#">About</a></li>
+                    <li>></li>
+                    <li>Partners</li>
+                </ul>
+            </div>
             <div class="banner-content">
                 <h2>Partners</h2>
                 <p>Interested in becoming a partner?</p>
@@ -66,6 +95,7 @@
                 <h2>Featured Videos</h2>
                 <div class="video-box">
                     <div class="featured-box-1">
+                        <img src="images/fleximg1.jpg" alt="people image" class="flex-img">
                         <div class="box-content">
                             <h5>Juhee Ahmed</h5>
                             <p>CEO, Fab CI</p>
@@ -174,13 +204,13 @@
             <div class="wrapper">
                 <div class="inner-footer-section">
                     <div class="top-footer-row">
-                        <div class="plan-icon">
+                        <div class="items plan-icon">
                             <i class="fa fa-paper-plane" aria-hidden="true"></i>
                         </div>
-                        <div class="submit-info">
+                        <div class="items submit-info">
                             <h2>Submit Your Innovation</h2>
                         </div>
-                        <div class="apply-btn">
+                        <div class="items apply-btn">
                             <button class="btn btn-submit">APPLY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                         </div>
                     </div>
@@ -191,9 +221,8 @@
                                 <span><i class="fa fa-facebook-f" aria-hidden="true"></i></span>
                                 <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
                             </div>
-                            <div class="left-text">
-                                <p>&copy; 2019 TO THE NEW. All rights Reserved. Terms Of Use | Privacy Policy </p>
-                            </div>
+                            <p>&copy; 2019 TO THE NEW. All rights Reserved. Terms Of Use | Privacy Policy </p>
+                            
                         </div>
                         <div class="right-item">
                             <p>Call Us @ Toll Free Number</p>
@@ -207,6 +236,7 @@
         </footer>
     </div>
 
+<script src="script/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
