@@ -1,0 +1,48 @@
+.navbar{
+    flex-direction: column;
+    align-items: center;
+}
+.header .navbar li:first-child a{
+    border: none;
+}
+.banner-top-box{
+    flex-direction: column;
+    align-items: center;
+}
+.caption{
+    width: 100%;
+    text-align: center;
+}
+.caption p:first-child{
+    width: 100%;
+}
+.form-div{
+    width: 80%;
+    margin: 3rem auto;
+}
+.form-div p{
+    text-align: left;
+}
+.banner-bottom-box{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.image-border-bttom{
+    display: none;
+}
+.feature{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+.img-div{
+    flex: 1;
+}
+.feature-caption{
+    display: block;
+    width: 100%;
+    flex: 2;
+    text-align: left;
+    /* border: 1px solid red; */
+}
