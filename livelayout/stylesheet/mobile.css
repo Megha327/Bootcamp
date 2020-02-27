@@ -51,4 +51,7 @@ display: none;
 .feature-caption{
     text-align: center;
 }
+.img-div{
+    border-bottom: 2px solid red;
+}
 
