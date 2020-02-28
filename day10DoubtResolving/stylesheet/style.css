@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: SkyFont;
+    src: url('../fonts/Monoton/Monoton-Regular.ttf');
+}
+body{
+    font-family: SkyFont;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 16px;
+    line-height: 1.4;
+}
+/* Utilities start */
+.main-container{
+    background: url('../images/road-1072823__340.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.inner-container{
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* text-align: center; */
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.selectors{
+    padding: 2rem;
+    background-color: turquoise;
+    color: red;
+}
+.para{
+    margin: 1rem;
+    background-color: blue;
+    color: white;
+}
+#para{
+    margin: 1rem;
+    background-color: red;
+    color: yellow;
+}
+p{
+    margin: 1rem;
+    background-color: darkred;
+    color: crimson;
+}
+
+.selectors p{
+    margin: 1rem;
+    background-color: darkslateblue;
+    color: brown;
+}
+p{
+    margin: 1rem;
+    background-color: darkred;
+    color: crimson;
+}
+
+.first-parent{
+    position: relative;
+    background-color: deeppink;
+    height: 200px;
+    width: 500px;
+
+}
+/* .nested1{
+    position: relative;
+} */
+.nested{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 100px;
+}
+.fixed{
+    position: absolute;
+}
