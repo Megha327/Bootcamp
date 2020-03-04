@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+  <h1>Q6. Create a counter using closures.</h1>
+<script>
+
+function a(){
+  var count = 0;
+  var x = 10;
+  var y = 20;
+ return function b(){
+   count++;
+    console.log("Value of X: " + x + " - Vlaue of Y: " + y);
+    console.log("Closure Counter: " + count);
+  }
+}
+var obj = new a();
+
+obj();
+obj();
+obj();
+obj();
+
+ </script>
+</body>
+
+</html>

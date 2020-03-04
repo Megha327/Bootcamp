@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+
+  <h1>Q4. Explain 3 properties of argument object.</h1>
+<script>
+console.log("argument property 'Length' ");
+function add(values) {
+  values = Number(values);
+  for (var i = 1; i < arguments.length; i++) {
+    values += Number(arguments[i]);
+  }
+  return console.log(values);
+}
+
+add(2,4,5,4,6);
+
+
+console.log("argument property 'iterative'");
+function f() {
+  for (var letter of arguments) {
+    console.log(letter);
+  }
+}
+f('w', 'y', 'k', 'o', 'p');
+
+
+console.log("argument property 'callee'");
+function create() {
+   return function(n) {
+      if (n <= 1)
+         return 1;
+      return n * arguments.callee(n - 1);
+   };
+}
+
+console.log(create()(6)); //720 (6 * 5 * 4 * 3 * 2 * 1)
+
+ </script>
+</body>
+
+</html>

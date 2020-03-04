@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+  <h1>Q2. Given an array, say [1,2,3,4,5]. Print each element of an array after 3 secs.</h1>
+<script>
+  say = [1,2,3,4,5];
+  var i = 0;
+  var intervalId = setInterval(function(){ 
+  if(i === say.length - 1){
+      clearInterval(intervalId);
+   }
+   console.log(say[i]);
+   i++;
+  }, 3000);
+ </script>
+</body>
+
+</html>

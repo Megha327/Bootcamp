@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript Clock </title>
+  
+</head>
+<body>
+    <h1>Q1. Create a hierarchy of person, employee and developers. </h1>
+<script>
+  
+  function person(){
+   this.personObj1 = {name:"Megha", age:25, phone:9897967890};
+   this.personObj2 = {name:"Shefali Goyal", age:23, phone:9897967890};
+   this.personObj3 = {name:"Raj Gupta", age:24, phone:9897967890};
+  }
+   
+  function employee(){
+    person.call(this);
+    this.empObj1 = {empId:1001};
+    this.empObj2 = {empId:1002};
+    this.empObj3 = {empId:1003};
+  } 
+  function developers(){
+    employee.call(this);
+    this.devObj1 = {competancy:"Mean"};
+    this.devObj2 = {competancy:"Mean"};
+    this.devObj3 = {competancy:"React Native"};
+  } 
+
+ var per = new person();
+ var emp = new employee();    
+  var dev = new developers();
+
+  console.log(per);
+  console.log(emp);
+   console.log(dev);
+ </script>
+</body>
+
+</html>

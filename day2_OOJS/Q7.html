@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+  <h1>Q7. Explain 5 array methods with example.</h1>
+<script>
+    var arr = ["one","two","three","four"];
+    function myFunction(){
+      console.log(arr);
+      var removeItems = arr.splice(2,1,"anyone","anytwo");
+      console.log("Splice Method apply remmove element: " + removeItems);
+      console.log("New array from splice method: " + arr);
+      
+      console.log("**********************************");
+      
+      var girl = ["Megha","shefali","aankita"];
+      var boys = ["raj","ankit","shishir","karthik"];
+      console.log("Girls Name Array: " + girl);
+      console.log("Boys Name Array: " + boys);
+      var children = girl.concat(boys);
+      console.log("children Name: " + children);
+      
+      console.log("orignal girl array: " + girl);
+      console.log("orignal boys array: " + boys);
+      console.log("**********************************");
+      
+      var sliceArr = arr.slice(2);
+      console.log("slice array: " + sliceArr);
+      console.log("**********************************");
+      
+      arr.forEach(function(value){
+          console.log(value);
+      })
+      
+      console.log("****************************");
+      
+      var numArr = [5, 6, 7, 8, 9];
+      var mappedArr = numArr.map(function(value){
+        return value * 2;
+      });
+      console.log("array before using map function: " + numArr);
+      console.log("Using map function: " + mappedArr);
+      
+      console.log("array after using map function: " + numArr);
+      console.log("**********************************")
+    }
+    myFunction();
+
+
+
+
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+    <h3>Q3. Explain difference between Bind and Call (example).</h3>
+<script>
+//   var person = {
+//       FullName:function (){
+//         return  this.firstName + " " + this.lastname;
+//       }
+//   }
+// var person1={
+//    firstName:"Megha",
+//    lastname:"Prajapati"
+//  }
+//   console.log(person.FullName.call(person1));
+
+var employee={
+  empId:1001,
+  compentency:function(comp){
+   this.competency=comp;
+  }
+}
+
+function obj(){
+  this.age=25;
+    employee.compentency.call(this,"Feen");
+}
+
+
+var ob = new obj();
+console.log(ob);
+console.log("***************************************");
+
+
+var developer = {name:"Ankit Kumar"};
+
+var p = function(a,b,c){
+    return "welcome "+this.name+" in "+a+" "+b+" "+c;
+};
+
+var bound = p.bind(developer); 
+
+console.log(bound("TO","THE","NEW")); 
+
+ </script>
+</body>
+
+</html>

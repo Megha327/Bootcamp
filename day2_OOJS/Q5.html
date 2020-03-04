@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+<h1>Q5. Create a function which returns number of invocations and number of instances of a function.</h1>
+  <script>
+    MyClass.instanceCount=0;
+    function MyClass() {
+      var count = 0;
+      MyClass.instanceCount++;
+      this.printInstanceCountAndInvocation = function() {
+        count++;
+        console.log("Instance count: " + MyClass.instanceCount + 
+                    " -- Invocation: " + count);
+      }
+    }
+
+    var o1 = new MyClass();
+    o1.printInstanceCountAndInvocation();
+
+    var o2 = new MyClass();
+    o2.printInstanceCountAndInvocation();
+
+    o1.printInstanceCountAndInvocation();
+    o1.printInstanceCountAndInvocation();
+    o1.printInstanceCountAndInvocation();
+
+    o2.printInstanceCountAndInvocation();
+
+   // console.log(o1.count);
+  </script>
+</body>
+
+</html>
