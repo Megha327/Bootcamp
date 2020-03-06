@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+  <h1>Q2.</h1>
+  <ul>
+
+ 
+ 	
+    <li data-time="5:17">Flexbox Video</li>
+    
+       
+    <li data-time="8:22">Flexbox Video</li>
+    
+       
+    <li data-time="3:34">Redux Video</li>
+    
+       
+    <li data-time="5:23">Flexbox Video</li>
+    
+       
+    <li data-time="7:12">Flexbox Video</li>
+    
+       
+    <li data-time="7:24">Redux Video</li>
+    
+       
+    <li data-time="6:46">Flexbox Video</li>
+    
+       
+    <li data-time="4:45">Flexbox Video</li>
+    
+       
+    <li data-time="4:40">Flexbox Video</li>
+    
+       
+    <li data-time="7:58">Redux Video</li>
+    
+       
+    <li data-time="11:51">Flexbox Video</li>
+    
+       
+    <li data-time="9:13">Flexbox Video</li>
+    
+       
+    <li data-time="5:50">Flexbox Video</li>
+    
+       
+    <li data-time="5:52">Redux Video</li>
+    
+       
+    <li data-time="5:49">Flexbox Video</li>
+    
+       
+    <li data-time="8:57">Flexbox Video</li>
+    
+       
+    <li data-time="11:29">Flexbox Video</li>
+    
+       
+    <li data-time="3:07">Flexbox Video</li>
+    
+       
+    <li data-time="5:59">Redux Video</li>
+    
+       
+    <li data-time="3:31">Flexbox Video</li>
+    
+       
+    </ul>
+    
+   <h3>1. Select all the list items on the page and convert to array.</h3>
+    
+    <h3>2. Filter for only the elements that contain the word 'flexbox'</h3>
+    
+    <h3>3. map down to a list of time strings</h3>
+    
+    <h3>4. map to an array of seconds</h3>
+    
+    <h3>5. reduce to get total using .filter and .map</h3>
+
+<script>
+        let value = document.getElementsByTagName('li');
+
+      console.log("Q1. Select all the list items on the page and convert to array.");
+      let arr = [];
+      for(let x of value){
+        arr.push(x.innerHTML);
+      }
+      console.log(arr);
+      console.log("*********************");
+
+      console.log("Q2. Filter for only the elements that contain the word 'flexbox'");
+      let filt = arr.filter(func = (val)=>{
+          return val.includes("Flexbox");
+      });
+
+      console.log(filt);
+      cosole.log("*******************************");
+
+      console.log("3. map down to a list of time strings");
+      let liArr=Array.from(document.getElementsByTagName('li'));
+      let mapedArr=liArr.map((ele)=>{return ele.getAttribute("data-time");});
+      console.log(mapedArr);
+      console.log("********************************");
+
+      console.log("4. map to an array of seconds");
+      let splitArr = mapedArr.map((ele)=>{return ele.split(":")[1];});
+      console.log(splitArr);
+      console.log("********************************");
+
+      console.log("Q4.5. reduce to get total using .filter and .map")
+      let arrForTotal = splitArr.map((ele)=> {return parseInt(ele);});
+      console.log(arrForTotal);
+      let total = arrForTotal.reduce((acc,cur)=> {return acc + cur ;});
+      console.log(total);
+      console.log("***********************");
+
+
+ </script>
+</body>
+
+</html>
