@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <title>Javascript </title>
+  
+</head>
+<body>
+    <h1>Q3. Write a program to implement inheritance upto 3 classes.The Class must  public variables and static functions.</h1>
+  
+</body>
+<script>
+  class People{
+  name1 = "xyz";
+  address = "abc";
+  constructor(name, address){
+    this.name = name;
+    this.address = address;
+  }
+}
+
+class Employee extends People{
+  empid = 0;
+  salary = 0;
+  constructor(empid, salary, name, address){
+    super(name, address);
+    this.empid = empid;
+    this.salary = salary;
+  }
+  
+}
+
+class Developer extends Employee{
+  //competency = "asc";
+  constructor(competency, empid, salary, name, address){
+    super(empid, salary, name, address);
+    this.competency = competency;
+  }
+    getPeopleInfo = () =>{
+      return  {
+        competency:this.competency,
+        name:this.name,
+        address:this.address,
+        empid:this.empid,
+        salary:this.salary
+      };
+    }
+
+}
+
+
+let getInfo = new Developer( "Feen", 1001, 15000, "Megha", "Noida");
+console.log(getInfo.getPeopleInfo());
+//console.log(People.name1);
+ 
+</script>
+
+</html>
