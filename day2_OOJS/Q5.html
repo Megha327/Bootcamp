@@ -12,30 +12,28 @@
 <body>
 <h1>Q5. Create a function which returns number of invocations and number of instances of a function.</h1>
   <script>
-    MyClass.instanceCount=0;
-    function MyClass() {
-      var count = 0;
-      MyClass.instanceCount++;
-      this.printInstanceCountAndInvocation = function() {
-        count++;
-        console.log("Instance count: " + MyClass.instanceCount + 
-                    " -- Invocation: " + count);
-      }
-    }
+   calc.times = 0;
+calc.instances = 0;
 
-    var o1 = new MyClass();
-    o1.printInstanceCountAndInvocation();
+function calc() {
+  
+  if(this instanceof calc)
+     calc.instances+=1;
+  else
+    calc.times+=1;
+ }
 
-    var o2 = new MyClass();
-    o2.printInstanceCountAndInvocation();
+calc();
+calc();
+calc();
+calc();
 
-    o1.printInstanceCountAndInvocation();
-    o1.printInstanceCountAndInvocation();
-    o1.printInstanceCountAndInvocation();
+var obj1 = new calc();
+var obj2 = new calc();
+var obj3 = new calc();
 
-    o2.printInstanceCountAndInvocation();
-
-   // console.log(o1.count);
+console.log("invocation count: " + calc.times);
+console.log("instance count: " + calc.instances);
   </script>
 </body>
 
