@@ -1,5 +1,5 @@
 # Bootcamp
-Q1. https://output.jsbin.com/pizigaq
+Q1. https://jsbin.com/mewohel/edit?html,console
 Q2. https://output.jsbin.com/pizigaq
 Q3. https://output.jsbin.com/pizigaq
 Q4. https://output.jsbin.com/pizigaq
