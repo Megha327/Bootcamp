@@ -1,3 +1,3 @@
 # Bootcamp
 
-https://output.jsbin.com/vayivim
+https://jsbin.com/munacan/edit?output
