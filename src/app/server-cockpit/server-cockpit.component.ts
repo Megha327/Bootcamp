@@ -20,8 +20,9 @@ export class ServerCockpitComponent implements OnInit {
       this.customEvent.emit("this message from child");
   }
 
-  userInputValueFromChild(){
+  userInputValueFromChild(event){
     console.log("sucess");
+    this.newInput = event.target.value;
     this.customEventForUserInput.emit({userValue:this.newInput});
   }
   
