@@ -1,3 +1,6 @@
-<p>server-cockpit works!</p>
-<button (click)="sendMsgFromChild()">send to parent</button>
-<input type="text" (input)="userInputValueFromChild()">
+<div class="child-parant">
+    <p>server-cockpit works!</p>
+    <h1>This is child to parant Component Intraction:</h1>
+    <div><button (click)="sendMsgFromChild()">send to parent</button></div>
+    <div><input type="text" (input)="userInputValueFromChild($event)"></div>
+</div>

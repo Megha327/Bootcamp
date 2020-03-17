@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class ServerCockpitComponent implements OnInit {
  
   @Output() customEvent=new EventEmitter<string>();
-  @Output() customEventForUserInput = new EventEmitter<{userValue:any}>();
+  @Output() customEventForUserInput = new EventEmitter<any>();
   newInput="";
   constructor() { }
 
@@ -20,9 +20,10 @@ export class ServerCockpitComponent implements OnInit {
       this.customEvent.emit("this message from child");
   }
 
-  userInputValueFromChild(){
+  userInputValueFromChild(event){
     console.log("sucess");
-    this.customEventForUserInput.emit({userValue:this.newInput});
+    this.newInput=event.target.value;
+    this.customEventForUserInput.emit(this.newInput);
   }
   
 }

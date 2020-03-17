@@ -11,15 +11,15 @@ export class AppComponent {
   testText="this is demo text of parent child data passing";
 
   getmsg="";
-  getUserInput={};
+  getUserInput="";
 
   getMsgFromChild(event:string){
       console.log(event);
       this.getmsg=event;
   }
-  getUserInputValue(value:{userValue:any}){
+  getUserInputValue(value){
       console.log(event);
-      this.getUserInput=value.userValue;
+      this.getUserInput=value;
   }
  
 }

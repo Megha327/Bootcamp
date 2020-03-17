@@ -1,3 +1,18 @@
-<p>server-element works!</p>
-<p>{{ element[0].content }}</p>
-<p>{{ test }}</p>
+<div class="parant-child">
+    <p>server-element works!</p>
+    <h1>this is Parant to child Component Intraction:</h1>
+    <div class="parant-text">
+        <h2>This is parant text:</h2>
+        <p>-> {{ element[0].content }}</p>
+        <p>-> {{ test }}</p>
+    </div>
+
+    <h1>Create Event Binding component inbuilt events:- click, keyup</h1>
+    <div>Click event: <button (click)=cleckEvent()>Clcik Me</button>
+    <p>{{ clickValue }}</p>
+    </div>
+    <div>
+        Keyup event:<input type="text" (keyup)="keyupEvent($event)">
+        <p>{{ keyupValue }}</p>
+    </div>
+</div>

@@ -1,7 +1,10 @@
-<app-server-element [srvElement]="serverElement" [test]="testText"></app-server-element>
-<app-server-cockpit 
-    (customEvent)="getMsgFromChild($event)"
-    (customEventForUserInput)="getUserInputValue($event)"
-></app-server-cockpit>
-<p>{{ getmsg }}</p>  
-<p>{{ getUserInput }}</p>
+<div class="parant">
+    <h1>This is parant component:</h1>
+    <app-server-element [srvElement]="serverElement" [test]="testText"></app-server-element>
+    <app-server-cockpit 
+        (customEvent)="getMsgFromChild($event)"
+        (customEventForUserInput)="getUserInputValue($event)"
+    ></app-server-cockpit>
+    <p>{{ getmsg }}</p>  
+    <p>{{ getUserInput }}</p>
+</div>
