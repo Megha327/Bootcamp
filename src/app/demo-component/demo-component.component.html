@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="ngif_change">
+        <h2>this is part of *ngIf structural directve & change class attribute directive:</h2>
+        <button class="btn" (click)="clickEvent()">Click for Update</button>
+        <br><br>
+        <div 
+        *ngIf="isShow" 
+        [ngClass]="{bgColor: name ==='hello'}">
+            Hy, this is update by click event.{{ name }}</div>
+    </div>
+
+    <div class="ngfor_change">
+        <h2>this is part of *ngFor structural directve &  ngStyle attribute directive:</h2>
+        <ol class="list-group">
+            <div>
+                <li class="list-item"
+                *ngFor="let student of students; let i = index"
+                [ngStyle]="{color: i < 4 ? 'blue' : 'red'}"
+                [ngClass]="{'studentBgColor': i < 4 }">
+                 {{ student }}
+                </li>
+            </div>
+        </ol>
+    </div>
+
+    <div class="input-box">
+        <h2>Make a input box and set its default value using ngModel.</h2>
+        <input type="text" [(ngModel)]="default">
+        <p>{{ default }}</p>
+    </div>
+    <div class="custom-directive">
+        <h2>Create custom directive and change the innerText of the element to  ‘ Hello , I am Custom Directive’.</h2>
+        <p appCustomDirective></p>
+    </div>
+    
+</div>
