@@ -1,0 +1,15 @@
+.parant-div{
+    width: 80%;
+    margin: 10px auto;
+    background-color: violet;
+    color: white;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+    margin: 10px;
+    font-size: 18px;
+}
