@@ -1,6 +1,7 @@
 <div class="parant-div">
     <h2>*create a parant-child intraction and console all method of component life cycle.</h2>
     <button class="btn" (click)="chnageVlaueofTitle()">Chnage Title</button>
-    <app-child-component [text]="title"></app-child-component>
+    <button class="btn-danger" (click)="clickevent()">Destroy child</button>
+    <app-child-component *ngIf="isShow" [text]="title"></app-child-component>
     
 </div>

@@ -25,7 +25,7 @@ AfterViewChecked,
 OnDestroy
  {
    @Input() text:string;
-   isShow=true;
+  
 
   constructor() { 
     console.log("constructor called!");
@@ -56,8 +56,5 @@ OnDestroy
   ngOnDestroy(){
     console.log("ngOnDestroy called!");
   }
-  clickevent(){
-    this.isShow=false;
-  }
-
+ 
 }

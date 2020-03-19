@@ -8,6 +8,7 @@ import { ConditionalExpr } from '@angular/compiler';
 })
 export class AppComponent  {
   title = 'Bootcamp  angular training';
+  isShow=true;
 
   constructor(){
 
@@ -16,7 +17,8 @@ export class AppComponent  {
   chnageVlaueofTitle(){
     this.title="chnage value of title";
   }
-  destroyTitle(){
-    this.title="";
+  clickevent(){
+    this.isShow=false;
   }
+
 }
