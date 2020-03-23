@@ -1,0 +1,12 @@
+<h2 style="color: salmon;">Welcome to Product</h2>
+<a routerLink="/" class="btn btn-primary">Back to Dashboard</a>
+<hr>
+<div class="container">
+    <ul class="list-group">
+        <li class="list-item-group"
+        *ngFor="let products of productItem"
+        (click)="onSelect(products)">
+        <span class="badge">{{ products.id }}</span> {{ products.name }}
+        </li>
+    </ul>
+</div>
