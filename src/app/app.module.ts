@@ -11,6 +11,7 @@ import { PageNotFooundComponent } from './page-not-foound/page-not-foound.compon
 
 const appRoutes:Routes=[
   {path:'', component: DashboardComponentComponent},
+  {path:'dashboard', component: DashboardComponentComponent},
   {path:'product', component: ProductComponentComponent},
   {path:'product/:id', component:DashboardComponentComponent},
   {path:'**', component:PageNotFooundComponent}
