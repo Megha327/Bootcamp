@@ -11,10 +11,11 @@ export class InactiveUserComponent implements OnInit {
   constructor(private userService: userService) { }
 
   ngOnInit(): void {
+    this.users = this.userService.inactiveUsers;
   }
 
   onSetToActive(id:number){
-
+    this.userService.setToActive(id);
   }
 
 }

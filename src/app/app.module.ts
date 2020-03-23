@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ActiveUserComponent } from './active-user/active-user.component';
 import { InactiveUserComponent } from './inactive-user/inactive-user.component';
 import { userService } from './user.service';
+import { CounterService } from './counter.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { userService } from './user.service';
   imports: [
     BrowserModule
   ],
-  providers: [userService],
+  providers: [userService,  CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
