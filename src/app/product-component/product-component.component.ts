@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 })
 export class ProductComponentComponent implements OnInit {
   productItem:any=[
-    {id:1, name:"pruoduct1"},
-    {id:2, name:"pruoduct2"},
-    {id:3, name:"pruoduct3"},
-    {id:4, name:"pruoduct4"},
-    {id:5, name:"pruoduct5"}
+    {id:1, name:"product1"},
+    {id:2, name:"product2"},
+    {id:3, name:"product3"},
+    {id:4, name:"product4"},
+    {id:5, name:"product5"}
   ]
   constructor(private router:Router) { }
 

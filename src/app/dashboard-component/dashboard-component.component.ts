@@ -11,7 +11,7 @@ export class DashboardComponentComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    let id = this.route.snapshot.params['id'];
     this.productId = id;
   }
 
