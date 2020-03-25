@@ -1,0 +1,16 @@
+.container{
+    margin: 10px auto;
+}
+label{
+    display: block;
+    /* background-color: bisque;  */
+}
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.template-driven{
+    border: 2px solid black;
+}
+.reactive-form{
+    border: 2px solid black;
+}
