@@ -3,8 +3,8 @@
     <div class="row">
       <h2>Reactive form:</h2>
       <div class="col-lg-12">
-        <form >
-          <div id="userdata" [formGroup]="signupform" (ngSubmit)="onSubmit()" >
+        <form [formGroup]="signupform" (ngSubmit)="onSubmit()">
+          <div id="userdata"  >
               <div class="form-group">
                 <label for="email">Enter Email*</label>
                 <input id="email1" 
@@ -15,7 +15,7 @@
                 required
                 email>
                 <span
-                *ngIf="!signupform.get(mail).valid ">
+                *ngIf="!signupform.get('mail').valid && signupform.get('mail').touched ">
                 Please enter valid mail!</span>
                </div>
               <div class="form-group">
@@ -25,6 +25,9 @@
                 class="form-control" 
                  formControlName="paswrd"
                 required>
+                <span
+                *ngIf="!signupform.get('paswrd').valid && signupform.get('paswrd').touched ">
+                Please enter password!</span>
               </div>
               <div class="form-group">
                 <label for="gender">Select Gender*</label>
@@ -33,6 +36,9 @@
                   formControlName="gen"
                   [value]="gender"> {{ gender }}
                 </div>
+                <span
+                *ngIf="!signupform.get('gen').valid && signupform.get('gen').touched ">
+                Please select any gender!</span>
               </div>
               <div class="form-group">
                 <label for="city">Choose a city:</label>
@@ -44,6 +50,9 @@
                   <option value="gurugram">Gurugram</option>
                   <option value="gaziabad">Gaziabad</option>
                 </select>
+                <span
+                *ngIf="!signupform.get('cit').valid && signupform.get('cit').touched ">
+                Please select any city!</span>
               </div>
               <div class="form-group">
                 <label for="myfile">Upload an Image:</label>
@@ -51,6 +60,9 @@
                 id="myfile1"
                 formControlName="fil" 
                 class="form-control">
+                <span
+                *ngIf="!signupform.get('fil').valid  ">
+                Please select any file!</span>
               </div>
               <div class="form-group">
                 <button type="submit" 
